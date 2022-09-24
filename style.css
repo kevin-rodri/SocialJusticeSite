@@ -1,3 +1,183 @@
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+  /* Add a background color or image */
+  background-color:  #008CBA;
+  background-image: url('');
+
+  /* Customize the font, size, and color for text*/
+  font-family: Arial;
+  font-size: 16px;
+  color: white;
+
+  /* Adjust the padding and margins */
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+
+  
+
+}
+
+
+
+/*
+Style Text: Add style rules for any headings (h1-6),
+paragraphs and links
+*/
+
+/*
+Pseudo class for anchor tags (will likely change the colors at some point)
+*/
+a:link{
+color: green;
+}
+a:visited {
+  color:crimson;
+}
+a:hover{
+  color: #0366d6;
+}
+a:active{
+  color:black;
+}
+
+h1, h3{
+  font-weight: bold;
+  text-align: center;
+}
+
+
+h2 {
+
+}
+
+
+p {
+font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*
+Style Lists: Styles added to the ol or ul style rulesets affect the entire
+list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ol {
+
+}
+
+ol li {
+
+}
+
+
+ul {
+
+}
+
+ul li {
+
+}
+
+
+/*
+Style Buttons: Add style rules for any headings (h1-6),
+paragraphs and links
+*/
+.button-container{
+  /* not the most intuitive solution at the moment, but will do */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-button-left{
+background-color: white;
+border: none;
+color: #008CBA;
+top: 17%;
+left: 38%;
+font-size: 16px;
+text-align: center;
+padding: 15px 32px;
+cursor: pointer;
+margin-bottom: 15px;
+}
+.home-button-right{
+  background-color: white;
+  border: none;
+  color: #008CBA;
+  top: 17%;
+  left: 54%;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  }
+
+
+
+/* Header css*/
+
+
+/* Example: This styles elements with class="header"*/
+.header {
+  border-width: 0px 5px 2px 3px;  /* Would be 2px (from the top), 3px (right), 2px (bottom), and 3px (left) */
+  margin-bottom: 105px; /* Might change the number but this will do for my liking */
+}
+
+.problem-section {
+  display: flex;
+}
+
+.right-side {
+  flex: 50%;
+  padding: 10px;
+}
+
+.right-side-header{
+  text-align: center;
+}
+.left-side{
+  flex: 50%;
+  padding: 10px;
+  margin-left: 25px;
+}
+.left-side-text{
+  width: 400px;
+  text-align: center;
+}
+
+
+/* Example: This styles an element with an id="header-img" */
+#header-img {
+
+}
+/* css for footer tag*/
+footer {
+    margin-top: auto;
+    padding:  0;
+    text-align: center;
+    font-size: medium;
+}
+
+
 html, body {
     height: 100%;
     width: 100%;
