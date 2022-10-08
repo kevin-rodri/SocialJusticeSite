@@ -83,7 +83,44 @@ h1, h3{
   font-weight: bold;
   text-align: center;
 }
+/* Button for dark mode configs*/
+#theme-button {
+  text-decoration:dashed;
+  padding: 10px;
+  border: black;
+  color: #008CBA;
+  border-width: 10px;
+  background-color: white;
 
+}
+#theme-button:hover{
+  color: #0366d6;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode .navbar ul li a {
+  font-family: Arial;
+  color:white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.dark-mode a{
+  color: white;
+}
+.dark-mode a:link{
+  color: green;
+  }
+  .dark-mode a:visited {
+    color:crimson;
+  }
+  .dark-mode a:hover{
+    color: #0366d6;
+  }
+  .dark-mode a:active{
+    color:black;
+  }
 
 /* Logic three-column section of site*/
 .problems{
@@ -163,6 +200,10 @@ margin-bottom: 15px;
 
 .problem-section {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex: 100%;
+  margin-left: 20px;
 }
 
 .right-side {

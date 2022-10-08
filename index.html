@@ -17,7 +17,14 @@
       <li><a href="#about-my-topic" title = "About My Topic" class = "navbar" >About My Topic</a></li>
       <li><a href="#Data" title = "Data About Overconsumption of Social Media" class = "navbar">Data About Overconsumption of Social Media</a></li>
       <li><a href="#solution" title = "Solution" class = "navbar">Call to Action</a></li>
-      <li><a href="#sources" title = "Solution" class = "navbar">Sources</a></li>
+      <li><a href="#sources" title = "Solution" class = "navbar"  onclick="send()">Sources</a></li>
+      <script>
+        function send() {
+          location.assign("https://docs.google.com/document/d/1iuP_S_wULVD-N6WDnUklbBTDSs_-8bu9k0i1YtrkN-c/edit?usp=sharing")
+        
+        }
+      </script>
+      <li ><button id="theme-button">Toggle Lighter Mode</button></li>
       <!-- Stretch Challenge: Drop Down -->
     </ul>
   </div>
@@ -32,7 +39,6 @@
     <script>
       function myFunction() {
         location.assign("https://www.addictioncenter.com/drugs/social-media-addiction/")
-      
       }
     </script>
     <button class = "home-button-right" type="button" onclick="redirect()" target = "_blank">Donate</button>
@@ -52,7 +58,7 @@
   </div>
   <div class = "right-side">
     <h2 class = "right-side-header">About My Topic</h2>
-    <p>Many people spend many hours on social media platforms. The media consume them; they see and want to be updated. It's also possible that someone wants to keep in touch with someone through social media. Interactions may either be good or not, but regardless are consuming the attention of users.</p>
+    <p >Many people spend many hours on social media platforms. The media consume them; they see and want to be updated. It's also possible that someone wants to keep in touch with someone through social media. Interactions may either be good or not, but regardless are consuming the attention of users.</p>
     <p>Technology is becoming a necessity in today's world; from texts to homework assignments to being informed of what's happening within the community, our demand for technological resources is rising. While the rise of technological resources can be found to be helpful, some risks come along the way. According to statistics, 59% of the world's population uses social media. The average daily usage is 2 hours and 29 minutes. While more than half of the world's population uses social media, their overall usage is more than the recommended time one should spend on a screen (If you're wondering how much time you should spend on a screen, check the link <a href = "https://www.reidhealth.org/blog/screen-time-for-adults" target="_blank">here</a>). The more time one spends on technology can lead to Insomnia, Eye Strain, and poor mental health(there's more, but for the sake of this project, I will solely focus on three).</p>
     <!--- STOP --->
   </div>
@@ -77,23 +83,29 @@
     <!--- Impact --->
     <div id = "solution">
       <h2 class = "center-title">Call to Action</h2>
-
-    <!--- News ---> <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
-    
-    <div id = "sources">
-      <h2 class = "center-title">Sources Used</h2>
-    <!---   uncommented for now and will cite all of my worked used on a separate document
-      <h2>Sources Used</h2>
-    <a class=""
-        href="">
-        <article>
-            <h3></h3>
-        </article>
-    </a>
-  </div>
-  --->
+      <div class = "center-title">
+        <img src="attention.jpg" alt="Call to Actiion" width="300px">
+      <p>With that being said, this issue is ongoing due to the negative impacts it currently holds on young adolescents and adults. The following solutions will not solve the problem but raise awareness. </p>
+    </div>
+      <!--- News ---> <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
+    <div id = "solution" class = "problems">
+      <div class="column">
+        <h3>Solution #1: Take a Break</h3>
+        <p class = "info">As simple as this sounds, it is a way to come across combating the issue. Taking a break will get your mind off social media and encourage you to engage in other activities, such as learning how to bake a cake.  It's a stepping stone to breaking out of the barrier of being attached to social platforms.</p>
+      </div>
+      <div class="column">
+        <h3>Problem #2: Sleep</h3>
+        <p class = "info">On average, health experts suggest that one gets 7-8 hours of sleep, but this number can vary from one person to another. If you're unsure, speaking with a healthcare professional would be ideal. There are also treatments to help combat sleep disorders, such as sedatives and Antidepressants. There are many resources if you don't know where to start. If you go and click on the "Donate" button, there is a list of resources that contain helpful information about sleep and sleep dangers.</p>
+      </div>
+      <div class="column">
+        <h3>Problem #3: Seek Professional Help</h3>
+        <p class = "info">Visiting a healthcare professional can improve your mental well-being. Researchers suggest getting proper guidance to devise a solution that works for you. Another way is communicating through tech. There can be various resources in an application that can be very useful for an individual, such as meditation, illness management, and skill-training apps that can cut down costs and time to go and visit a doctor. 
+        </p>
+        </div>
+      </div>
     <footer> 
         <strong>&copy; 2022 Kevin Rodriguez.</strong>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
