@@ -4,7 +4,9 @@
 <head>
     <title>Overconsumption of Social Media by Teenagers/Young Adults</title> <!-- the content here will only show in the tab and in the metadata about the page -->
     <link rel="icon" href="computer.png">
-    <link rel="stylesheet" href="style.css">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="reset-webview.css" rel="stylesheet" type="text/css" />
 
 
 </head>
@@ -18,6 +20,7 @@
       <li><a href="#Data" title = "Data About Overconsumption of Social Media" class = "navbar">Data About Overconsumption of Social Media</a></li>
       <li><a href="#solution" title = "Solution" class = "navbar">Call to Action</a></li>
       <li><a href="#sources" title = "Solution" class = "navbar"  onclick="send()">Sources</a></li>
+      <li><a href="#petition" title = "Form" class = "navbar">Form</a></li>
       <script>
         function send() {
           location.assign("https://docs.google.com/document/d/1iuP_S_wULVD-N6WDnUklbBTDSs_-8bu9k0i1YtrkN-c/edit?usp=sharing")
@@ -102,6 +105,43 @@
         <p class = "info">Visiting a healthcare professional can improve your mental well-being. Researchers suggest getting proper guidance to devise a solution that works for you. Another way is communicating through tech. There can be various resources in an application that can be very useful for an individual, such as meditation, illness management, and skill-training apps that can cut down costs and time to go and visit a doctor. 
         </p>
         </div>
+      </div>
+
+      <div class="petition" id="petition">
+        <h2 class = "center-title">Form</h2>
+        <div class="petition-container">
+
+
+          <div class="petition-para">
+            <!-- info goes here -->
+            <p>Thank you for taking the time sit and read each part of the site. I hope you have learned about how imprtant this issue can be to society and the measures that can be taken. Take the time to sign and take the pledge of spreading awareness of this issue. You never know, something may change because of this.</p>
+          </div>
+    
+          <div class="signatures">
+            <p>🖊️ DJ from Brooklyn supports this.</p>
+            <p>🖊️ Amy from Queens supports this.</p>
+            <p>🖊️ Teresa from Harlem supports this.</p> 
+            <p id = "counter"></p>
+          </div>
+        </div>
+    
+      <!--- Sign Petition Form --->
+      <form id="sign-petition" title="sign-petition">
+        <!-- inputs go here -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" min="2"required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" min="6"required>
+        <label for="city">City</label>
+        <input type="text" id="city" min="4"required>
+           <!--- Sign Now Button --->
+           <button id="sign-now-button" >Sign Now</button>
+      </form>
+    
+    <div id = "read-more" class = "read-more">
+      <h2 class = "center-title">Further Reading</h2>
+    </div>
+      
       </div>
     <footer> 
         <strong>&copy; 2022 Kevin Rodriguez.</strong>
