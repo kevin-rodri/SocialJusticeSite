@@ -26,7 +26,6 @@
 
 }
 // Prevents redirect
-// ${name} from ${city} supports this`
 
 
 // ensure that each input enter is a valid input
@@ -87,17 +86,38 @@ const getBooks = () => {
   .then((data) => {
     // more code here later
     console.log(data);
-
     let div  = document.querySelector(".read-more");
     // append everything that's on json file
-   
       let info = document.createElement('p');
-      info.innerText = JSON.stringify(data);
+      info.innerText = 'Book: ' +  data.full_title + ' ISBN: ' + data.isbn_13;
+      let second = document.createElement('p');
       div.appendChild(info);
    
 
 });
 }
 getBooks();
+const apiKey = 'bnIpw-6MSLihS0noxoMJNu0G4ojJsj7Mak387aBug4L6yDgi';
+const keywords = 'Technology';
+const url = 'https://api.currentsapi.services/v1/search?apiKey=' + apiKey + '&keywords=' + keywords;
 
+const request = async () => {
+  const response = await fetch(url);
+  const data = await response.json();
+  const news = data.news;
+
+  for (var i = 0; i < 10; i++){
+  
+    const title = document.createElement('h3');
+    title.textContent = news[i].title;
+    const description = document.createElement('p');
+  description.textContent = news[i].description;
+  const article = document.createElement('article');
+  article.appendChild(title);
+  article.appendChild(description);
+  const newsDiv = document.getElementById('news');
+  newsDiv.append(article);
+  }
+}
+request();
 
