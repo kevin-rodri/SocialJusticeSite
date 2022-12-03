@@ -5,4 +5,4 @@
 
  ## Website 
 
- The link is here: 
+ The link is here: https://kevin-rodri.github.io/SocialJusticeSite/
