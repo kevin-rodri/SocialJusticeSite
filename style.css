@@ -40,9 +40,7 @@ form {
 }
 form label, form input, form button {
  width: 50%;
-margin-left: 25%;
-margin-right:25%;
-margin-bottom: 10px;
+margin: 10px 25% 10px;
 }
 
 .petition-para{
@@ -63,7 +61,7 @@ paragraphs and links
 /* Configs for Nav bar */
 .navbar{
   text-align: center;
-  display: block;
+  display: flex;
 }
 .navbar ul {
   list-style: none;
@@ -93,7 +91,7 @@ paragraphs and links
 }
 
 /*
-Pseudo class for anchor tags (will likely change the colors at some point)
+Pseudo class for anchor tags 
 */
 a:link{
 color: green;
@@ -113,7 +111,7 @@ h1, h3{
   text-align: center;
 }
 /* Button for dark mode configs*/
-#theme-button {
+#theme-button , form button{
   text-decoration:dashed;
   padding: 10px;
   border: black;
@@ -121,10 +119,13 @@ h1, h3{
   border-width: 10px;
   background-color: white;
 
+
 }
 #theme-button:hover{
   color: #0366d6;
 }
+
+/* dark mode configs */
 .dark-mode {
   background-color: black;
   color: white;
@@ -179,17 +180,14 @@ a {
   text-decoration: none;
 }
 
-/* Add to CSS file */
+/* CSS for error detection */
 .error {
   border-style: solid;
   border-width: 2px;
   border-color: red;
   background:pink;
 }
-/*
-Style Buttons: Add style rules for any headings (h1-6),
-paragraphs and links
-*/
+
 .button-container{
   /* not the most intuitive solution at the moment, but will do */
   display: flex;
@@ -277,9 +275,3 @@ footer {
     text-align: center;
     font-size: medium;
 }
-
-
-html, body {
-    height: 100%;
-    width: 100%;
-  }
