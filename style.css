@@ -15,16 +15,13 @@ body {
 
 .petition-container{
   display: flex;
-  column-count: 2;
 }
 .petition-para{
   flex: 50%;
-  justify-content:flex-end;
   margin:15px;
 }
 .signatures {
   flex: 50%;
-  justify-content:flex-end;
   margin: 5px;
 }
 form {
