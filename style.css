@@ -226,26 +226,24 @@ margin-bottom: 15px;
 
 .problem-section {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex: 100%;
-  flex: 33.3%;
 }
 
 .right-side {
-  padding: 10px;
+  flex: 50%;
 }
 
 .right-side-header{
   text-align: center;
 }
 .left-side{
-  padding: 10px;
-  margin-left: 25px;
+  flex: 50%;
 }
-.left-side-text{
-  flex: 33.3%;
-  text-align: center;
+.left-side p{
+text-align: center;
+width: 80%;
+}
+.left-side iframe {
+  margin: 5px;
 }
 
 /* css for footer tag*/
