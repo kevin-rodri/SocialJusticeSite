@@ -8,7 +8,7 @@ themeButton.addEventListener("click", toggleDarkMode);
 // will allow users to sign and stand for a worthy cause :) 
 let signNowButton = document.getElementById("sign-now-button");
 // reference to the current amount of people that have signed the form
-let count = 3;
+let count = 0;
 const addSignature = (event) => {
   // Write your code to manipulate the DOM here
   let name = document.getElementById('name').value;
